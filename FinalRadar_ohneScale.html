@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radar Chart Ice</title>
+<script src="Chart.min.js"></script>
+</head>
+<style>
+	body {
+  		background-color: rgb(0,0,0);
+	}
+	
+</style>
+<body>
+<canvas id="myRadarChart" width="1920" height="1080" ></canvas>	
+<script>
+	
+	var ctx = 'myRadarChart';
+	var ctx = document.getElementById("myRadarChart");
+	ctx.height = 2200;
+	
+	var myRadarChart = new Chart(ctx, {
+	
+    type: 'radar',
+    data: {
+			labels: ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober',
+					 'November','Dezember'],
+			datasets: [{
+			label: '1989',
+				type:'radar',
+				fill: 'false',
+				backgroundColor:'rgb(0, 0, 139)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 0, 139)',
+				borderWidth: '2',
+				data: [13172445,13356864,13207989,12350323,11356606,9952409,7332053,5563236,4867461,6949904,9472463,11608168]
+			}, {
+				
+			label: '1990',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(72, 118, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor:'rgb(72, 118, 255)',
+				borderWidth: '2',
+				data: [12792183,13401535,13500881,12270570,10907190,9198284,6526024,4994138,4550289,6728255,9650491,11474556]
+			}, {
+				
+			label: '1991',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(67, 110, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(67, 110, 238)',
+				borderWidth: '2',
+				data: [12559219,13216250,13415334,12862999,11503694,9658676,6765106,5208056,4517984,6746034,9262207,11210855]
+			}, {
+				
+			label: '1992',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(58, 95, 205)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(58, 95, 205)',
+				borderWidth: '2',
+				data: [12607361,13576424,13474421,12833417,11431878,9946800,7221243,5439467,5430096,7731100,9755203,11725825]
+				
+			}, {
+				
+			label: '1993',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(39, 64, 139)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(39, 64, 139)',
+				borderWidth: '2',
+				data: [12918564,13606557,13771048,13021597,11419879,9263422,6282824,4760433,4581265,7048613,9553422,11479831]
+			}, {
+				
+			label: '1994',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(0, 0, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 0, 255)',
+				borderWidth: '2',
+				data: [12866072,13513086,13539493,12903846,11662048,9685719,6926076,5187227,5133540,7224787,9722324,11497237]
+			}, {
+				
+			label: '1995',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(0, 0, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 0, 238)',
+				borderWidth: '2',
+				data: [12778729,13361411,13332500,12397584,10907417,8946525,6160118,4693848,4432096,5986548,9038768,11093074]
+			}, {
+				
+			label: '1996',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(0, 0, 205)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 0, 205)',
+				borderWidth: '2',
+				data: [12143045,12964465,12895775,12319114,11289424,9836146,7441643,5733200,5627121,7535919,8775185,11038515]
+			}, {
+				
+			label: '1997',
+				fill: 'false',
+				backgroundColor:'rgb(30, 144, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(30, 144, 255)',
+				borderWidth: '2',
+				data: [12382852,13425785,13293701,12569323,11241352,9200420,6505614,5091213,4897038,6459054,9081133,11247922]
+			}, {
+				
+			label: '1998',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(28, 134, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(28, 134, 238)',
+				borderWidth: '2',
+				data: [12794704,13756781,13564112,12844647,11404096,9186028,6453491,4693042,4302539,6702728,8893296,10915711]
+			}, {
+				
+			label: '1999',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(24, 116, 205)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(24, 116, 205)',
+				borderWidth: '2',
+				data: [12594931,13438379,13525887,13139624,11669532,9254292,6557827,4755017,4298114,6830593,9265631,10999812]
+			}, {
+				
+			label: '2000',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(16, 78, 139)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(16, 78, 139)',
+				borderWidth: '2',
+				data: [12292219,13076772,13157865,12587809,11249957,9054526,6389847,4785348,4352814,6688138,8876452,10966183]
+			}, { 
+			
+			label: '2001',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(99, 184, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(99, 184, 255)',
+				borderWidth: '2',
+				data: [12339091,13196337,13628394,13044350,11388990,9088922,6289505,4937169,4593085,6644635,9086824,10559997]
+				
+			}, {
+				
+			label: '2002',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(92, 172, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(92, 172, 238)',
+				borderWidth: '2',
+				data: [12251840,13413283,13413352,12409483,11163649,9190707,6443213,4320675,4034412,6234089,8761216,10649987]
+			}, { 
+				
+			label: '2003',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(79, 148, 205)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(79, 148, 205)',
+				borderWidth: '2',
+				data: [12506078,13382377,13487561,12440608,10977392,9249222,6537077,4478788,4092345,6197827,8690204,10872180]
+			}, { 
+				
+			label: '2004',
+				fill: 'false',
+				type:'radar',
+				backgroundColor: 'rgb(54, 100, 139)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(54, 100, 139)',
+				borderWidth: '2',
+				data: [12257629,12938988,13081261,12109980,10864491,9378605,7067411,4750021,4367925,6430128,8862188,10867569]
+			}, { 
+				
+			label: '2005',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(0, 191, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 191, 255)',
+				borderWidth: '2',
+				data: [11749187,12297868,12774033,12160345,10804878,8729881,6093212,4035809,3702397,5631762,8668359,10539640]
+			}, { 
+				
+			label: '2006',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(0, 178, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 178, 238)',
+				borderWidth: '2',
+				data: [11531840,12210675,12349179,11808319,10368731,8612402,6094060,4227254,3995797,5869010,8090510,10128457]
+			}, { 
+				
+			label: '2007',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(0, 154, 205)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 154, 205)',
+				borderWidth: '2',
+				data: [11783449,12549765,12507012,11664587,10695805,8406966,5242364,3042696,2552434,4198258,8006768,10228885]
+			}, { 
+				
+			label: '2008',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(0, 104, 139)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(0, 104, 139)',
+				borderWidth: '2',
+				data: [11920164,12794157,13141636,12344486,10858777,8618019,5947383,3411595,2806803,5495541,8731881,10694289]
+			}, { 
+				
+			label: '2009',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(135, 206, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(135, 206, 255)',
+				borderWidth: '2',
+				data: [11972682,12860213,13014831,12464083,11006229,8885092,6041657,3801855,3412771,5129670,8163582,10464091]
+			}, { 
+				
+			label: '2010',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(126, 192, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(126, 192, 238)',
+				borderWidth: '2',
+				data: [11765856,12590847,13122782,12462210,10521966,8123954,5541155,3426682,2906486,5180485,8081229,10100715]
+			}, { 
+				
+			label: '2011',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(108, 166, 205)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(108, 166, 205)',
+				borderWidth: '2',
+				data: [11456204,12329241,12270075,12014825,10323032,8160814,5160669,2948343,2669871,4423879,8076371,10260000]
+			}, { 
+				
+			label: '2012',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(74, 112, 139)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(74, 112, 139)',
+				borderWidth: '2',
+				data: [11885092,12419947,13313367,12658482,10922205,8045214,4928954,2304153,1670511,4029906,7595666,10139444]
+			}, { 
+				
+			label: '2013',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(176, 226, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(176, 226, 255)',
+				borderWidth: '2',
+				data: [11720341,12895933,13131479,12336746,10911234,8817234,5812296,3795290,3472649,5680420,8299264,10521462]
+			}, { 
+				
+			label: '2014',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(164, 211, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(164, 211, 238)',
+				borderWidth: '2',
+				data: [11809576,12353329,12624126,11986487,10664975,8477299,5893926,3900893,3239261,5355467,8494615,10634412]
+			}, { 
+				
+			label: '2015',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(141, 182, 205)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(141, 182, 205)',
+				borderWidth: '2',
+				data: [11841298,12549966,12426227,11921345,10525975,8571877,5704605,3108590,2752577,5171918,8141130,10268154]
+			}, { 
+				
+			label: '2016',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(96, 123, 139)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(96, 123, 139)',
+				borderWidth: '2',
+				data: [11479833,12154868,12329623,11629830,9876841,7908759,5267872,2850173,2447644,4260510,6892469,9412463]
+			}, { 
+				
+			label: '2017',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(198, 226, 255)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(198, 226, 255)',
+				borderWidth: '2',
+				data: [11060306,12046898,12184757,11739888,10557244,8201325,5469784,3182233,2923054,4998010,7739528,9908618]
+			}, { 
+				
+			label: '2018',
+				fill: 'false',
+				type:'radar',
+				backgroundColor:'rgb(185, 211, 238)',
+				pointRadius:'1',
+				pointBorderWidth: '0.2',
+				borderColor: 'rgb(185, 211, 238)',
+				borderWidth: '2',
+				data: [11241806,11888346,12310054,11653728,10219687,8331862,5580975,3185227,2651657,4075822,8017332,9867602]
+			}
+					
+			]
+		
+			},
+		
+			options: {
+				legend: {
+					position:'left',
+						labels: {
+							fontColor: 'white'	
+						}
+			},
+      			title: {
+        			display: true,
+					position: 'top',
+					fontColor: 'white',
+					fontStyle:'bold',
+					fontSize:'30',
+        			text: 'Eisfläche der Arktis in Quadratkilometern monatlich von 1989 bis 2018'
+      		},
+				scale: {
+        		// Hides the scale
+        			display: false,	
+    		}
+    	}
+	
+	});
+	
+	
+				
+</script>
+</body>
+</html>

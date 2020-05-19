@@ -1,0 +1,230 @@
+<!doctype html><head>
+<meta charset="utf-8"><!--Umlaute werden ausgegeben in ü,ö,ä-->
+<title>Kfz-Kennzeichen Ermittler</title><!--Anzeige im Tab-->
+</head>
+<body>
+<style> /* Beginn CSS zum optischen Einrichten der Seite */
+	
+body /*Hintergrundbild festlegen und anpassen*/
+{
+ background-image: url("https://thewallpaper.co/wp-content/uploads/2016/10/Mountain-road-wallpaper-hd-wallpaper-hd-wallpapers-high-definition-cool-desktop-wallpapers-for-windows-apple-tablet-download-free-1920x1080.jpg");
+ background-repeat: no-repeat; /*Legt fest, ob ein Hintergrund über die gesamte Breite oder/und Höhe eines Elements wiederholt wird*/
+ background-attachment: scroll; /*Hintergrundbild scrollt mit der Seite*/
+ background-size:contain; /*Bild wird auf 1280px und 800px skaliert*/
+}
+	
+input[type=text], select /*Design des Eingabefeld*/
+{
+ padding: 12px; /*legt den Innenabstand fest, erzwungener Leerraum zwischen dem Inhalt eines Elements und seinem eigenen Elementrand*/
+ margin: 10px; /*Außenrand oder -abstand ein erzwungener Leerraum zwischen dem aktuellen Element und seinem Nachbarelementen.*/
+ display: inline-block; /*welche Art von Box von einem Element erzeugt wird, Inline-Boxen verlaufen auf einer Zeile horizontal in der Schreibrichtung der verwendeten Sprache*/
+ border: none; /*Rahmen um ein Element bestimmen*/
+ border-radius: 10px; /*Radius bestimmen, mit dem die Ecken abgerundet werden*/
+ box-sizing: border-box; /*Angabe gilt für Inhalt, Innenabstand und Rahmen, bestimmen, worauf sich Angaben zu den Abmessungen eines Elementes beziehen*/
+ position: absolute; /* Elemente losgelöst vom Textfluss positionieren, normalen Elementfluss entfernt werden und an jede beliebige Stelle des Viewports positioniert werden*/
+ width: 200px; /*Position des Eingabefelds*/
+ height: auto;/*Position des Eingabefelds*/
+ top: 300px;
+ right: 300px;
+}
+	
+input[type=button] /*Design Button*/
+{
+ background-color: #BBC18F; /*Farbe des Buttons*/
+ width: auto;
+ border: none;
+ border-radius: 10px;
+ color: white; /*Schriftfarbe*/
+ padding: 12px;
+ text-decoration: none; /*unterstrichenen oder durchgestrichenen Text bestimmen*/
+ margin: 10px;
+ text-align: center; /*Ausrichtung von Text und inline-Elementen wie Bildern */
+ position: absolute;
+ width: 120px;
+ height: auto;
+ top: 300px;
+ right: 170px;
+}
+	
+h1 /*Überschrift Kfz-Kennzeichen Ermittler*/
+{
+ font-size: 43px; /*Schriftgrößen festlegen*/
+ text-indent: 20px;/*Einrückung der ersten Zeile eines Absatzes. Sie können durch negative Werte auch hängende Zeilen bewirken.*/
+ text-decoration: underline; /* Überschrift wird unterstrichen*/
+ font-family: Arial;/*Schriftfamilie festlegen*/
+ color: #BBC18F;
+ text-align: center;
+ position: static;
+}
+h2 /*Unterüberschrift Baden Württemberg*/
+{
+ font-size: 30px;
+ text-indent: 20px;
+ font-family: Arial;
+ color: #BBC18F;
+ text-align: center;
+ position: static;
+}
+/*Ende CSS Design*/
+
+</style> 
+<h1>Kfz-Kennzeichen Ermittler</h1> <!--Überschrift-->
+<h2> Baden-Württemberg</h2> <!--Unterüberschrift-->
+	
+<input id="eingabe" type="text" placeholder="Kennzeichen..." style ="font-size: 16pt">
+<!--Das input-Element wird innerhalb von Formularen genutzt, um Daten vom Benutzer abzufragen, legt Eigenschaften von Textfeld fest, und es wird eine id vergeben, die als Zuordnung genutzt wird, text ist für die Eingabe kurzer einzeiliger Texte vorgesehen, placeholder-Attribut können Sie eine Beispielangabe auf das auszufüllende Feld setzen, style die Schriftart, Hintergrundfarben usw.-->
+<input onClick="Abfrage()" type="button" value="Ermitteln" style = "font-size: 16pt">
+<!-- button löst eine clientseitige Aktion aus, beispielsweise eine Berechnung mit JavaScript, ohne dass dazu Daten versendet oder empfangen werden, onClick Führen Sie einen JavaScript Funktion aus wenn eine Schaltfläche geklickt wird-->
+<p id="ausgabe"></p><!--Id für spätere Ausgabe im Browser-->
+	
+<script type = "text/javascript">//Beginn Java Script
+//document.getElementById,Gibt eine Referenz zu einem Element anhand seiner ID zurück.
+//Ausgabefenster im Browser
+document.getElementById("ausgabe").style.color = "black"; //Schriftfarbe
+document.getElementById("ausgabe").style.fontFamily = "Arial"; //Schriftfamilie
+document.getElementById("ausgabe").style.fontSize = "35px"; //Schriftgröße
+document.getElementById("ausgabe").style.margin = "450px 150px"; //Position Box
+document.getElementById("ausgabe").style.backgroundColor ="white";// Hintergrund Box
+document.getElementById("ausgabe").style.borderRadius = "10px"; //Radius Box
+
+
+		function Abfrage() //Funktion die Eingabe vom input speichert und dann über den switch-Case durchsucht und Ergebnis ausgibt
+		{
+		var text;//definition variable zur späteren Ausgabe
+	  	var zeichen = document.getElementById("eingabe").value; //definition variable in der die Eingabe von Input im Browser fenster gespeichert wird
+
+	  	switch(zeichen) //switch case zur Überprüfung des Inputs im Eingabefeld, var zeichen wird geprüft
+		{
+		case "AA": //Fall AA wird geprüft
+		  	text = "Stadt: Aalen" // wenn richtig ausgabe text
+		break;
+				
+		case "BAD":
+			text = "Stadt: Baden-Baden";
+		break;
+				
+		case "BB":
+			text = "Stadt: Böblingen";
+		break;
+				
+		case "BC":
+			text = "Stadt: Biberach";
+		break;
+		case "BL":
+			text = "Stadt: Balingen";
+		break;
+		case "BÜS":
+			text = "Stadt: Büsingen a. Hochrhein";
+		break;
+		case "CW":
+			text = "Stadt: Calw";
+		break;
+		case "EM":
+			text = "Stadt: Emmendingen";
+		break;
+		case "ES":
+			text = "Stadt: Esslingen";
+		break;
+		case "FDS":
+			text = "Stadt: Freudenstadt";
+		case "FN":
+			text = "Stadt: Friedrichshafen";
+		break;
+		case "FR":
+			text = "Stadt: Freiburg i. Breisgau";
+		break;
+		case "GP":
+			text = "Stadt: Göppingen";
+		break;
+		case "HD":
+			text = "Stadt: Heidelberg";
+		break;
+		case "HDH":
+			text = "Stadt: Heidenheim";
+		break;
+		case "HN":
+			text = "Stadt: Heilbronn";
+		break;	
+		case "KA":
+			text = "Stadt: Karlsruhe";
+		break;
+		case "KN":
+			text = "Stadt: Konstanz";
+		break;
+		case "KÜN":
+			text = "Stadt: Künzelsau";
+		break;
+		case "LB":
+			text = "Stadt: Ludwigsburg";
+		break;
+		case "LÖ":
+			text = "Stadt: Lörrach";
+		break;
+		case "MA":
+			text = "Stadt: Mannheim";
+		break;
+		case "MOS":
+			text = "Stadt: Mosbach";
+		break;
+		case "OG":
+			text = "Stadt: Offenburg";
+		break;
+		case "PF":
+			text = "Stadt: Pforzheim";
+		break;
+		case "RA":
+			text = "Stadt: Rastatt";
+		break;
+		case "RT":
+			text = "Stadt: Reutlingen";
+		break;
+		case "RV":
+			text = "Stadt: Ravensburg";
+		break;		
+		case "RW":
+			text = "Stadt: Rottweil";
+		break;
+		case "S":
+			text = "Stadt: Stuttgart";
+		break;
+		case "SHA":
+			text = "Stadt: Schwäbisch Hall";
+		break;		
+		case "SIG":
+			text = "Stadt: Sigmaringen";
+		break;
+		case "TBB":
+			text = "Stadt: Tauberbischhofsheim";
+		break;
+		case "TÜ":
+			text = "Stadt: Tübingen";
+		break;
+		case "TUT":
+			text = "Stadt: Tuttlingen";
+		break;
+		case "UL":
+			text = "Stadt: Ulm";
+		break;
+		case "VS":
+			text = "Stadt: Villingen-Schwenningen";
+		break;
+		case "WN":
+			text = "Stadt: Waiblingen";
+		break;	
+		case "WT":
+			text = "Stadt: Waldshut";
+		break;
+		default: //wenn kennzeichen nicht vorhanden
+			alert("Kennzeichen konnte nicht ermittelt werden ;)!"); 
+		
+					
+				
+	}
+	  document.getElementById("ausgabe").innerHTML = text;//Ausgabe des jeweilig angefragten Kennzeichen
+	}
+
+	</script>
+</body>
+</html>
+
+
