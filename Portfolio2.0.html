@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  font-family:Helvetica, Arial, Verdana;
+  margin: 0;
+  background-color:black;
+  width: 100%;
+  height: 1000px;
+}
+
+h1 {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 150px;
+  position: relative;
+  text-align: left;
+  color: white;
+  padding: 0px 20px;	
+}
+
+.leftcolumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+}
+	
+.rightcolumn {
+  
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+		
+.pic {
+  margin-bottom: 50px;
+  position: absolute;
+  left: 625px;
+  top: 100px;
+}
+		
+.cv {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 25px;
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  /*background-color: #ddd;*/
+  font-weight:bolder;
+  color: grey;
+}
+		
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .leftcolumn, .rightcolumn {   
+    flex-direction: row;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="/Users/chris/Desktop/Portfolio/Portfolio2.0.html">Home</a>
+  <a href="/Users/chris/Desktop/Portfolio/Über.html">Über</a>
+  <a href="/Users/chris/Desktop/Portfolio/Arbeit.html">Arbeit</a>
+  <a href="/Users/chris/Desktop/Portfolio/Kontakt.html">Kontakt</a>
+</div>
+<h1>- Hallo!</h1>
+<div class="row">
+<div class="leftcolumn">
+<div class="cv">
+	<p>
+	Mein Name ist Christian. Auf dieser Webseite stelle<br> 
+	Ich meine Projekte vor die Ich im laufe meines<br> 
+	Studiums, an der Hochschule für Gestaltung in<br> 
+	Schwäbisch Gmünd in dem Studiengang Internet der<br> 
+	Dinge - Gestaltung vernetzter Systeme erarbeitet habe.
+	</p>
+</div>
+</div>
+<div class="rightcolumn"></div>
+<div class="pic">
+<img src="/Users/chris/Desktop/Portfolio/Bilder/Myself1.jpg" alt="me" width="876 " height="880">
+</div>
+</div><!--div row-->
+</body>
+</html>

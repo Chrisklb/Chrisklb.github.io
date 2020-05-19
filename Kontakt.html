@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kontakt</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+	
+/* Style the body */
+body {
+  font-family:Helvetica, Arial, Verdana;
+  margin: 0;
+  background-color:black; 
+}
+
+h1 {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 60px;
+  padding: 0px 20px;
+  position: relative;
+  text-align: left;
+  color: white;	
+}
+	
+.kontakt{
+  font-family:Helvetica, Arial, Verdana;
+  padding: 0px 20px;
+  font-size: 18px;
+  position: relative;
+  text-align: left;
+  color: white;
+  text-align: left;	
+}
+
+::placeholder{
+  color: white;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #565656;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #565656;
+}
+
+input[type=text1] {
+  width: 30%;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #565656;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #565656;
+  height: 150px;
+}
+
+input[type=submit] {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 18px;
+  width: 10%;
+  background-color: #565656;
+  color: white;
+  padding: 14px 20px;
+  border: 1px solid #00FF26;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  /*background-color: #ddd;*/
+  font-weight:bolder;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: row;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="/Users/chris/Desktop/Portfolio/Portfolio2.0.html">Home</a>
+  <a href="/Users/chris/Desktop/Portfolio/Über.html">Über</a>
+  <a href="/Users/chris/Desktop/Portfolio/Arbeit.html">Arbeit</a>
+  <a href="/Users/chris/Desktop/Portfolio/Kontakt.html">Kontakt</a>
+</div>
+<p></p>
+<h1>Kontakt</h1>	
+<div class="kontakt">
+	<form action="mailto:christian.kolb@hfg-gmuend.de" method="post" enctype="text/plain">
+	Name:<br>
+		<input type="text" name="Name" placeholder="Bitte tragen Sie hier Ihren Namen ein.."><br>
+	<p></p>
+	E-Mail:<br>
+		<input type="text" name="E-Mail Adresse" placeholder="Bitte trage Sie hier Ihre E-Mail-Adresse ein.."><br>
+	<p></p>
+	Nachricht:<br>
+		<input type="text1" name="Nachricht" placeholder="Hier können Sie Ihre Nachricht verfassen.."><br><br>
+		<input type="submit" value="Absenden">
+	<p></p>
+    </form>
+</div>
+</body>
+</html>

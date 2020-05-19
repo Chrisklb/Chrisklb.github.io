@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Über</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  font-family:Helvetica, Arial, Verdana;
+  margin: 0;
+  background-color:black;
+}
+
+h1 {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 80px;
+  position: relative;
+  text-align: left;
+  color: white;
+  padding: 0px 20px;	
+}
+	
+.pic {
+  padding-bottom: 5px;	
+}
+.column {
+  float: left;
+  padding: 20px;
+}
+
+.column.side {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 16px;
+  position: relative;
+  text-align: left;
+  color: white;
+  padding: 0px 20px; 
+}
+
+.column.middle {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 16px;
+  position: relative;
+  text-align: left;
+  color: white;
+  padding: 0px 30px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+.cvline {
+  border-left: 6px solid white;
+  margin-left: 350px;
+  height: 2200px;
+  color: white;
+  position: relative;  
+}
+	
+.cvheader {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 20px;
+  position: relative;
+  text-align: left;
+  color: white;	
+}
+
+.cv {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 16px;
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-bottom: 100px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  /*background-color: #ddd;*/
+  font-weight:bolder;
+  color: grey;
+}
+
+/* Column container */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: row;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<script type = "text/javascript">
+		var eingabe;
+		
+		//for Schleife wird einmal durchlaufen und dann Bedingung geprüft
+		//for ([initialerAusruck]; [Bedingung]; [erhöhenderAusdruck])
+		
+		for (var zähler = 0, eingabe =" "; eingabe!= "229522" && zähler!= 3; zähler++)
+			{
+				eingabe = prompt("Passwort eingeben!","");//EIngabe Fenster
+			}
+			if(eingabe != "229522")
+			{
+				alert("falsches Passwort"); //Fenster bei drei mal falsches Passwort
+				window.location.href = "/Users/chris/Desktop/Portfolio/Portfolio.html";
+			}		
+			else
+			{
+				alert("Welcome"); //Fenster bei richtigem Passwort
+			}
+</script>
+<div class="navbar">
+  <a href="/Users/chris/Desktop/Portfolio/Portfolio2.0.html">Home</a>
+  <a href="/Users/chris/Desktop/Portfolio/Über.html">Über</a>
+  <a href="/Users/chris/Desktop/Portfolio/Arbeit.html">Arbeit</a>
+  <a href="/Users/chris/Desktop/Portfolio/Kontakt.html">Kontakt</a>
+</div>
+<h1>Über</h1>
+<div class="row">
+<div class="column side">
+<div class="pic">
+  <img src="/Users/chris/Desktop/Portfolio/Bilder/me4.jpg" alt="me" width="300" height="300">
+</div>
+<div class="cv">
+<div class="cvheader">
+  <h2>Persönliches</h2>
+</div>
+  <p>Name: Christian Kolb</p>
+  <p>Anschrift: Lange Str. 60/1, 73079 Süßen</p>
+  <p>Telefonnummer: 01754695626</p>
+  <p>E-Mail: christian.kolb@hfg-gmuend.de</p>
+  <p>Geburtstag: 02.02.1995</p>
+  <p>Geburtsort: Göppingen</p>
+</div>
+</div>
+<div class="cvline">
+	
+<div class="column middle">
+<div class="cv">
+<div class="cvheader">
+  <h2>Schulbildung</h2>
+</div>
+  <p>2001-2005: Grundschule, J.- G.- Fischerschule Süßen</p>
+  <p>2005-2007: Hauptschule, J.- G.- Fischerschule Süßen</p>
+  <p>2007-2012: Geschwister-Scholl-Realschule Süßen</p>
+  <p>2012: Schulabschluss zur Mittleren Reife</p>
+  <p>2012-2015: Berufsschule, Friedrich-Ebert-Schule in Esslingen Zell</p>	
+<div class="cvheader">
+  <h2>Praktikum/Ferienjob</h2>
+</div>
+  <p>Sommerferien 2010: Ferienjob bei der Firma Elektrotechnik Nägele in Süßen</p>
+  <p>Februar 2011: Praktikum bei der Firma Elektrotechnik Nägele in Süßen</p>
+  <p>Pfingstferien 2011: Ferienjob bei der Firma Elektrotechnik Nägele in Süßen</p>
+  <p>Sommerferien 2011: Ferienjob bei der Firma Elektrotechnik Nägele in Süßen</p>
+  <p>Sommerferien 2017: Ferienjob bei der Firma EMtec in Faurndau</p>
+  <p>Seit Oktober 2017: Ferienjob bei der Firma EMtec in Faurndau in den Semesterferien</p>
+<div class="cvheader">
+  <h2>Ausbildung</h2>
+</div>
+  <p>2012-2016:</p>
+  <p>Ausbildung als Elektroniker in Informations- und Telekommunikationstechnik bei der Firma<br>        
+  Elektrotechnik Nägele in Süßen</p>
+  <p>Februar 2016:</p>
+  <p>Ausbildungsabschluss als Elektroniker in Informations- und Telekommunikationstechnik bei der Firma<br> Elektrotechnik Nägele in Süßen</p>
+<div class="cvheader">
+  <h2>Arbeitsverhältnis</h2>
+</div>
+  <p>ab 1.März 2016: Firma Elektrotechnik Nägele in Süßen</p> 
+<div class="cvheader">
+  <h2>Weiterbildung</h2>
+</div>
+  <p>ab September 2016: Weiterführende Schule zum Erlangen der Fachhochschulreife</p>
+  <p>Juli 2017: Abschluss der Fachhochschulreife an der Gewerblichen Schule Göppingen</p>
+  <p>Oktober 2017: Beginn Studium an der Hochschule Aalen, Studiengang Internet der Dinge</p>
+  <p>seit Oktober 2018: Studium an der Hochschule für Gestaltung Schwäbisch Gmünd, Studiengang Internet der Dinge</p>
+<div class="cvheader">
+  <h2>Fachkenntnisse Ausbildung</h2>
+</div>
+<p>
+Installation von Systemen der Kommunikations- und Sicherheitstechnik, Installation von Telefonanlagen,<br>
+Installation von Alarm- und Brandmeldeanlagen, Analyse und Behebung von Störungen in <br>
+kommunikationstechnischen Systemen, Durchführung von Inspektionen und Wartungsarbeiten und Entwicklung von Kundenlösungen. 
+</p>
+<div class="cvheader">
+  <h2>Fachkenntnisse Studium</h2>
+</div>
+<p>
+Netzwerktopologie, Netzwerkprotokolle, OSI / ISO Schichtenmodell, Grundlagen der Elektrotechnik.
+Layout-, Illustrations- und Bildbearbeitungssofware.<br>
+Strukturierte Programmierung, Datenbanken und Datenbanksysteme, HTML, JavaScript, SQL, Python, Processing, APIs, Frameworks und Libraries.<br>
+Anwenden von Schnittstellen in Sensorik und Aktorik in webbasierten Sofwareumgebungen 
+</p>
+<p>
+Schriftarten, Schriftgrößen, Schriftauszeichnungen, Buchstaben- und Wortabstände, Satzspiegel, Zeilenbreite und Zeilenabstand,<br>Gliederung eines Textes, Platzierung von Bildern.
+Nutzerzentrierte Entwicklung, Design Thinking: UserResearch, Afinity Map, Brainstorming, Prototyping.<br>
+Qualitätssicherung in Netzwerken Grundlagen in Kryptografie und Kryptoanalyse, Überprüfung von Angrifs- und Sicherheitsstrategien,<br>Überprüfung von Daten- und Technikredundanz.
+</p>
+<div class="cvheader">
+  <h2>Persönliche Fähigkeiten und Kompetenzen</h2>
+</div>
+  <p>EDV-Kenntnisse: Office, Pages, Adobe</p>
+  <p>Fremdsprachen: Englisch</p>
+  <p>Programmier-Erfahrung: HTML, JavaScript, CSS, Processing, Python, (PHP, Arduino, MySQL, Node.js)</p>
+  <p>Sonstiges: Adobe Suite, Prototyping, Gestaltung/Design</p>	
+</div><!--cv-->
+</div><!--middle-->
+</div><!--div line-->
+</div><!--div row-->
+</body>
+</html>

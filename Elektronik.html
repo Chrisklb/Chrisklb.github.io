@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Elektronik</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+	
+
+/* Style the body */
+body {
+  font-family:Helvetica, Arial, Verdana;
+  margin: 0;
+  background-color:black; 
+}
+
+h1 {
+  font-family:Helvetica, Arial, Verdana;
+  font-size: 80px;
+  position: relative;
+  text-align: left;
+  color: white;
+  padding: 0px 15px;
+}
+
+figcaption {
+  font-family:Helvetica, Arial, Verdana;
+  color: white;
+  text-align: center;
+  font-size: 30px; 	
+}
+	
+.video {
+  position: relative;
+  text-align: center;
+  margin-bottom: 150px;	
+}
+	
+.pdf {
+  position: relative;
+  text-align: center;
+  margin-bottom: 150px;
+}
+	
+.button1 a {
+  font-family:Helvetica, Arial, Verdana;
+  background-color: black;
+  color: white;
+  padding: 0px 20px;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration-line:none;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  /*background-color: #ddd;*/
+  font-weight:bolder;
+  color: grey;
+}
+
+/* Column container */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: row;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="/Users/chris/Desktop/Portfolio/Portfolio2.0.html">Home</a>
+  <a href="/Users/chris/Desktop/Portfolio/Über.html">Über</a>
+  <a href="/Users/chris/Desktop/Portfolio/Arbeit.html">Arbeit</a>
+  <a href="/Users/chris/Desktop/Portfolio/Kontakt.html">Kontakt</a>
+</div>
+<p></p>
+<h1>Elektronik</h1>
+<div class="button1">
+   <a href="/Users/chris/Desktop/Portfolio/Arbeit.html">Zurück</a>
+</div>
+<div class="video">
+<figcaption>Elektrischer-Fahrradanhänger</figcaption>
+   <video width="720" height="480" poster="/Users/chris/Desktop/Portfolio/Bilder/e-trailer.png" controls>
+      <source src="/Users/chris/Desktop/Portfolio/Video/e-trailer.mp4" type="video/mp4">
+         Ihr Browser unterstützt das Video Element nicht
+   </video>
+</div>
+<div class="pdf">
+<figcaption>Line-Follower mit Arduino</figcaption>
+<p></p>
+   <iframe src="/Users/chris/Desktop/Portfolio/PDF/Arduino.pdf" width="720" height="800"></iframe>
+</div>
+<div class="pdf">
+<figcaption>Spiegel-Navigation mit Arduino</figcaption>
+<p></p>
+   <iframe src="/Users/chris/Desktop/Portfolio/PDF/SpecNav.pdf" width="720" height="800"></iframe>
+   <iframe src="/Users/chris/Desktop/Portfolio/PDF/Mobile Medien.pdf" width="720" height="800"></iframe>
+</div>
+</body>
+</html>
